@@ -68,7 +68,6 @@ TOP PLAYER
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .Container,
@@ -111,14 +110,15 @@ h2 {
 }
 
 .blogs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 35px;
-    padding-right: 42px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    margin-right: 17px;
 }
 
 .blogs img {
-    width: 80%;
+    width: 60%;
 }
 
 .blogs h2,
@@ -128,7 +128,7 @@ h2 {
 }
 
 .blogs .info {
-    margin-left: -30px;
+    margin-left: 10px;
 }
 
 span {
@@ -186,10 +186,38 @@ span {
         display: block;
     }
     .menu {
-        display: flex;
+        display: block;
         margin-left: -21px;
     }
     .menu .user {
         width: 20%;
+        margin-left: 20;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .top-blog {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+    }
+    .blogs {
+        flex-direction: column;
+    }
+    .blogs img {
+        width: 300px;
+    }
+    .course-details {
+        grid-template-columns: repeat(1, 1fr);
+        width: 350px;
+        justify-content: center;
+    }
+    .banar img {
+        width: 300px;
+    }
+    .course-info {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
